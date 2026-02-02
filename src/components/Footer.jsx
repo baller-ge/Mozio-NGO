@@ -5,18 +5,18 @@ export default function Footer() {
         < div className="footer" >
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-4 col-md-6">
                         <div className="footer-contact">
                             <h2>Contact Us</h2>
-                            <a href="https://maps.app.goo.gl/HQg6gMPpAJ445cda6" target="_blank" rel="noopener noreferrer"><p><i className="fa fa-map-marker-alt"></i>VI, LAGOS, Nigeria</p></a>
-                            <a href="tel:+234-8144514440"><p><i className="fa fa-phone"></i>+234-8144514440</p></a>
-                            <a href="mailto:tomorrow5182@gmail.com"><p><i className="fa fa-envelope"></i>tomorrow5182@gmail.com</p></a>
+                            <a href="https://maps.app.goo.gl/HQg6gMPpAJ445cda6" target="_blank" rel="noopener noreferrer"><p><i className="fa fa-map-marker-alt"></i>No. 55 Egbengu, Nteje, Oyi Local Government Area, Anambra State, Nigeria.</p></a>
+                            <a href="tel:+234-9074402446"><p><i className="fa fa-phone"></i>+234-9074402446</p></a>
+                            <a href="mailto:visitourchildsfoundation@gmail.com"><p><i className="fa fa-envelope"></i>visitourchildsfoundation@gmail.com</p></a>
                             <div className="footer-social">
-                                <a className="btn btn-custom" href="https://twitter.com"><i className="fab fa-x-twitter"></i></a>
-                                <a className="btn btn-custom" href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a>
-                                <a className="btn btn-custom" href="https://www.instagram.com"><i className="fab fa-instagram"></i></a>
-                                <a className="btn btn-custom" href="https://www.youtube.com"><i className="fab fa-youtube"></i></a>
-                                <a className="btn btn-custom" href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
+                                <a className="btn btn-custom" href="https://x.com/Visit_OCPF2025/status/1964054552044605742?t=iB4eLZsuEsO6oCOWrYGGDw&s=19"><i className="fab fa-x-twitter"></i></a>
+                                <a className="btn btn-custom" href="https://www.facebook.com/share/r/167TfJL6gG/"><i className="fab fa-facebook-f"></i></a>
+                                <a className="btn btn-custom" href="https://www.instagram.com/p/DOO56HhE0Tb/?igsh=MWt2cjYxYjRyam5y"><i className="fab fa-instagram"></i></a>
+                                {/* <a className="btn btn-custom" href="https://www.youtube.com"><i className="fab fa-youtube"></i></a>
+                                <a className="btn btn-custom" href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a> */}
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ export default function Footer() {
                             <a href="/">Latest Blog</a>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-6">
+                    <div className="col-lg-2 col-md-6">
                         <div className="footer-link">
                             <h2>Useful Links</h2>
                             <a href="/">Terms Of Use</a>
@@ -55,7 +55,7 @@ export default function Footer() {
             <div className="container copyright">
                 <div className="row">
                     <div className="col-md-6">
-                        <p>&copy; <a href="/">OUR CHILD'S PRIMAL FOUNDATION</a> | 2025, All Right Reserved.</p>
+                        <p>&copy; <a href="/">OUR CHILD'S PRIMAL FOUNDATION</a> | 2026, All Right Reserved.</p>
                     </div>
                     <div className="col-md-6">
                         <p>Designed With ❤️ By <a href="https://www.linkedin.com">TOMORROW</a></p>

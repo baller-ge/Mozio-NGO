@@ -47,22 +47,22 @@ export default function Navbar() {
                                 </div>
                                 <div className="text">
                                     <i className="fa fa-phone"></i>
-                                    <a href="tel:+234-8144514440"><p>+234-8144514440</p></a>
+                                    <a href="tel:+2349074402446"><p>+234-9074402446</p></a>
                                 </div>
                                 <div className="text">
                                     <i className="fa fa-envelope"></i>
-                                    <a href="mailto:tomorrow5182@gmail.com"><p>tomorrow5182@gmail.com</p></a>
+                                    <a href="mailto:visitourchildsfoundation@gmail.com"><p>visitourchildsfoundation@gmail.com</p></a>
                                 </div>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className="top-bar-right">
                                 <div className="social">
-                                    <a href="https://twitter.com"><i className="fab fa-x-twitter"></i></a>
-                                    <a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com"><i className="fab fa-instagram"></i></a>
-                                    <a href="https://www.youtube.com"><i className="fab fa-youtube"></i></a>
-                                    <a href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a>
+                                    <a href="https://x.com/Visit_OCPF2025/status/1964054552044605742?t=iB4eLZsuEsO6oCOWrYGGDw&s=19"><i className="fab fa-x-twitter"></i></a>
+                                    <a href="https://www.facebook.com/share/r/167TfJL6gG/"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/p/DOO56HhE0Tb/?igsh=MWt2cjYxYjRyam5y"><i className="fab fa-instagram"></i></a>
+                                    {/* <a href="https://www.youtube.com"><i className="fab fa-youtube"></i></a>
+                                    <a href="https://www.linkedin.com"><i className="fab fa-linkedin-in"></i></a> */}
                                 </div>
                                 {auth.length>0 && <button onClick={()=>{(auth==="USER"?localStorage.removeItem("NGO"):localStorage.removeItem("ADMIN_NGO")); setAuth(""); navigate("/");}} type='button' className='btn btn-outline-danger'>LOGOUT {auth}</button>}
                             </div>
