@@ -1,7 +1,7 @@
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import '../css/admin.css';
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { useNavigate } from "react-router-dom";
@@ -18,18 +18,7 @@ function Admin() {
     const navigate = useNavigate();
     const MySwal = withReactContent(Swal);
 
-    useEffect(() => {
-        const user = localStorage.getItem("ADMIN_NGO");
-        if (user) {
-            setAuth(user);
-            fetchDonations(user);
-        } else {
-            adminLogin();
-            setAllDonations([]);
-        }
-    }, [adminLogin]);
-
-    const adminLogin = async () => {
+    const adminLogin = useCallback(async () => {
         MySwal.fire({
             title: "ADMIN LOGIN",
             html:
@@ -70,7 +59,18 @@ function Admin() {
                 navigate("/");
             }
         });
-    };
+    }, []);
+
+    useEffect(() => {
+        const user = localStorage.getItem("ADMIN_NGO");
+        if (user) {
+            setAuth(user);
+            fetchDonations(user);
+        } else {
+            adminLogin();
+            setAllDonations([]);
+        }
+    }, [adminLogin]);
 
     const fetchDonations = async (auth1) => {
         var options = {
