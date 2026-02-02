@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-import sudhaar from '../assets/Initiatives/weaving.jpeg';
-import gyaan from '../assets/Initiatives/web training.jpeg';
-import nirmaan from '../assets/Initiatives/tailor.jpeg';
-import gogreen from '../assets/Initiatives/OIP.jpeg';
-import muskaan from '../assets/Initiatives/empowerment.jpg';
+import sudhaar from '../assets/Initiatives/001.jpeg';
+import gyaan from '../assets/Initiatives/002.jpeg';
+import nirmaan from '../assets/Initiatives/003.jpeg';
+import gogreen from '../assets/Initiatives/004.jpeg';
+import muskaan from '../assets/Initiatives/005.jpeg';
+import eel from '../assets/Initiatives/006.jpeg';
+import aatmabodh from '../assets/Initiatives/007.jpeg';
 import '../css/initiatives.css';
 
 const Initiatives = () => {
@@ -69,6 +71,16 @@ const Initiatives = () => {
       content: <img src={muskaan} alt="5" />,
       link: "https://swd.vit.edu/flagship/blood-d/blood.html"
     },
+    { key: uuidv4(),
+      content: <img src={eel} alt="6" />,
+      link: "https://swd.vit.edu/flagship/eel/eel.html"
+    },
+    {
+      key: uuidv4(),
+      content: <img src={aatmabodh} alt="7" />,
+      link: "https://swd.vit.edu/flagship/aatmabodh/aatmabodh.html"
+    }
+    
   ].map((slide, index) => {
     return {
       ...slide,
