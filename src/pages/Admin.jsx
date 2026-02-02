@@ -59,7 +59,7 @@ function Admin() {
                 navigate("/");
             }
         });
-    }, []);
+    }, [MySwal, navigate]);
 
     useEffect(() => {
         const user = localStorage.getItem("ADMIN_NGO");
