@@ -13,7 +13,7 @@ const SignUp = () => {
         if(user){
             navigate('/donate');
         }
-    }, [])
+    }, [navigate])
     
     const [showPassword, setShowPassword] = useState(false);
     const [form, setForm] = useState({ email: localStorage.getItem('user')?localStorage.getItem('user'):'', password: '', confirmPassword: '' });

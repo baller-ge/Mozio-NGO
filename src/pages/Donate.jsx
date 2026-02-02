@@ -12,7 +12,7 @@ export default function Donate() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Thank you for your donation intention!");
+        alert(`Thank you ${name} (${email}) for your donation intention of ₦${amount}!`);
     };
 
     return (

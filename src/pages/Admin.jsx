@@ -27,7 +27,7 @@ function Admin() {
             adminLogin();
             setAllDonations([]);
         }
-    }, []);
+    }, [adminLogin]);
 
     const adminLogin = async () => {
         MySwal.fire({
@@ -179,11 +179,11 @@ function Admin() {
                                                 <tbody className="text-start">
                                                     <tr>
                                                         <th scope="col">Email</th>
-                                                        <td scope="col">{selectedMail}</td>
+                                                        <td>{selectedMail}</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="col">IsEnabled</th>
-                                                        <td scope="col">{isEnabled ? <i className="fa fa-solid fa-circle-check fa-lg" style={{ color: "green" }} /> : <i className="fa fa-solid fa-circle-xmark fa-lg" style={{ color: "red" }} />}</td>
+                                                        <td>{isEnabled ? <i className="fa fa-solid fa-circle-check fa-lg" style={{ color: "green" }} /> : <i className="fa fa-solid fa-circle-xmark fa-lg" style={{ color: "red" }} />}</td>
                                                     </tr>
                                                     <tr>
                                                         <th scope="row">Total Amount Donated</th>
@@ -251,14 +251,14 @@ function Admin() {
                         <div className="search-result p-2" id="search-result">
                             {data && <div className='list-group'>
                                 {data.map((mail, index) => (
-                                    <a
+                                    <button
                                         key={index}
-                                        href="#"
+                                        type="button"
                                         onClick={() => { fetchUserInfo(mail); setSelectedMail(mail); setData(null); }}
                                         className='z-1 list-group-item list-group-item-action list-group-item-secondary'
                                     >
                                         {mail}
-                                    </a>
+                                    </button>
                                 ))}
                             </div>}
                         </div>
